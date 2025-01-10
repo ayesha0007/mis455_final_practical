@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal Search</title>
+    <title>Meal Search - Your Culinary Companion</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Meal Search</h1>
-        <input type="text" id="searchInput" placeholder="Search for a meal...">
-        <button id="searchButton">Search</button>
+        <div class="container">
+            <h1>Meal Search</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for a meal...">
+            <button id="searchButton">Search</button>
+        </div>
     </header>
     
-    <main id="resultsContainer"></main>
+    <main id="resultsContainer" class="container"></main>
     
     <footer>
-        <p>&copy; 2023 MealDB Search</p>
+        <div class="container">
+            <p>&copy; 2023 MealDB Search. All rights reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

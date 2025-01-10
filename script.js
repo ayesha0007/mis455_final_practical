@@ -38,6 +38,7 @@ function displayResults(meals) {
     if (meals.length > 5) {
         const showAllButton = document.createElement('button');
         showAllButton.innerText = 'SHOW ALL';
+        showAllButton.classList.add('show-all-button');
         showAllButton.addEventListener('click', () => displayAllResults(meals));
         resultsContainer.appendChild(showAllButton);
     }
