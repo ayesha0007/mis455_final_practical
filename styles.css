@@ -12,16 +12,35 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
     text-align: center;
+}
+
+.header-image {
+    position: relative;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: green; /* Change to green */
+    font-size: 3em; /* Adjust font size as needed */
+    font-family: 'Georgia', serif; /* Change font family */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1; /* Ensure text is above the image */
 }
 
 nav ul {
@@ -128,5 +147,9 @@ footer {
 
     button {
         width: 100%;
+    }
+
+    .header-title {
+        font-size: 2em; /* Adjust font size for smaller screens */
     }
 }

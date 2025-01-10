@@ -35,6 +35,7 @@ function displayResults(meals) {
         resultsContainer.appendChild(mealCard);
     });
 
+    // Check if there are more than 5 meals
     if (meals.length > 5) {
         const showAllButton = document.createElement('button');
         showAllButton.innerText = 'SHOW ALL';
